@@ -54,7 +54,7 @@ st.markdown(
 )
 
 with st.sidebar:
-    options = ["Home", "Rainfall Prediction", "Crop Yield Prediction", "Crop Recommendation", "AQI Prediction", "Meet the Creators"]
+    options = ["Home", "Rainfall Prediction", "Crop Yield Prediction", "Crop Recommendation", "AQI Prediction"]
     selected = option_menu("Krishi Mitr",
                            options,
                            menu_icon=":seedling:",
@@ -188,37 +188,7 @@ elif selected == "AQI Prediction":
 
 
 # Meet Creators
-elif selected == "Meet the Creators":
-    st.title("Meet the Creators")
-    st.markdown("<br>", unsafe_allow_html=True)  # Adding space between the title and the profiles
 
-    creators = [
-        {
-            "name": "Kanchan Rai",
-            "linkedin": "https://www.linkedin.com/in/kanchanraiii/",
-            "github": "https://github.com/kanchanraiii",
-            "image": "images/kanchan.jpg"
-        },
-        {
-            "name": "Aaron Thomas",
-            "linkedin": "https://www.linkedin.com/in/aaron-thomas-53996b255/",
-            "github": "https://github.com/AayJayTee",
-            "image": "images/aaron.jpg"
-        },
-        {
-            "name": "Saumyaa Garg",
-            "linkedin": "https://www.linkedin.com/in/saumyaa-garg-481b9224b/",
-            "github": "https://github.com/saumyaagarg",
-            "image": "images/saumyaa.jpg"
-        }
-    ]
-
-    cols = st.columns(3)
-
-    for i, creator in enumerate(creators):
-        with cols[i]:
-            st.image(creator["image"], width=80, caption=None, use_column_width=True, output_format='auto')
-            st.markdown(f"<div class='profile-column'><p class='profile-name'>{creator['name']}</p><a href='{creator['linkedin']}'><img src='https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg' class='icon'></a> <a href='{creator['github']}'><img src='https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png' class='icon'></a></div>", unsafe_allow_html=True)
 
 # Crop Yield Prediction
 elif selected == "Crop Yield Prediction":
@@ -294,7 +264,7 @@ Leverage machine learning for accurate crop yield predictions to enhance product
 
 # Home
 else:
-    img = "hero2.jpg"
+    img ="C:\\Users\\roopa\\OneDrive\\Desktop\\anusha\\Krishi-Mitr\\hero2.jpg"
     st.title("Krishi Mitr")
     st.write("##### Welcome to Krishi Mitr! Explore our tools in the sidebar to make informed agricultural decisions.")
     st.image(img, width=750)

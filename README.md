@@ -34,6 +34,3 @@ Technologies used in the project:
 *   Numpy
 *   Jupyter Notebook
 
-<h2>💖Click to view the deployed project</h2>
-
-<p>https://krishi-mitr.streamlit.app/</p>
